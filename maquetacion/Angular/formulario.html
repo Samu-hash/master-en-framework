@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Maquetacion para curso master</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <header id=header>
+        <div class="center">
+            <!--Logo-->
+            <div id=logo>
+                <img src="assets/images/angular.svg" class="app-logo" alt="LogoTipo" />
+                <span id="brand">
+                    <strong>Curso</strong>Angular
+                </span>
+            </div>
+
+            <!--Menu-->
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="#">Pagina 1</a></li>
+                    <li><a href="#">Pagina 2</a></li>
+                </ul>
+            </nav>
+            <!--Limpiar Flotado-->
+            <div class="clearBox"></div>
+        </div>
+    </header>
+
+    <div class="center">
+        <section id="content">
+            <h1 class="subheader"></h1>
+
+            <form class="mid-form">
+                <div class="form-group">
+                    <label for="nombe">Nombre</label>
+                    <input name="nombre" type="text"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido</label>
+                    <input name="apellido" type="text"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Biografia</label>
+                    <textarea name="bio"></textarea>
+                </div>
+
+                <div class="form-group radioBtn">
+                    <input type="radio" name=genero value="hombre"/>Hombre
+                    <input type="radio" name=genero value="mujer"/>Mujer
+                    <input type="radio" name=genero value="otro"/>Otro
+                </div>
+                <div class=clearBox></div>
+                <input type="submit" value="Enviar" class="btn btn-success"/>
+            </form>
+        </section>
+
+        <aside id="sidebar">
+            <div id="nav-blog" class="sidebar-item">
+                <h3>Puerdes hacer esto</h3>
+                <a href="#" class="btn btn-success">Crear articulo</a>
+            </div>
+
+            <div id="search" class="sidebar-item">
+                <h3>Buscador</h3>
+                <p>Encuentra el articulo que buscar</p>
+                <form>
+                    <input type="text" name="search" />
+                    <input type="submit" name="submit" class="btn" value="Buscar" />
+                </form>
+            </div>
+        </aside>
+        <div class="clearBox"></div>
+    </div>
+    <footer id="footer">
+        <div class="center">
+            <p>
+                &copy; Master en JavaScript de Samuel Alvarado
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
